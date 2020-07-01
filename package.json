@@ -13,7 +13,7 @@
     "client": "npm start --prefix=PortfolioGeneratorClient",
     "server": "npx nodemon",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false git clone https://github.com/Peacock-Blue/Frontend-PortGen-Production.git && npm install --prefix PortfolioGeneratorClient && npm run build --prefix PortfolioGeneratorClient"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false git clone https://github.com/Peacock-Blue/Frontend-PortGen-Production.git PortfolioGeneratorClient && npm install --prefix PortfolioGeneratorClient && npm run build --prefix PortfolioGeneratorClient"
   },
   "author": "",
   "license": "ISC",
